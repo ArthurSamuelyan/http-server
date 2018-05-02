@@ -1,0 +1,48 @@
+.FileLink
+{
+	color: #FFAF00;
+}
+.FileLink:visited
+{
+	color: #FF8040;
+
+}
+.FileContainer
+{
+/*	height: 150px; */
+	width: 200px;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	border: 5px solid #000000;
+	padding: 5px 5px 0px;
+	background-color: #281818;
+/*	color: #FFAF00;*/
+}
+.FileContainer:hover
+{
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+.FileContainer:active
+{
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+	border: 5px solid #A02040;
+	background-color: #781830;
+}
+
+.PictureContainer
+{
+	height: 150px;
+	width: 200px;
+	margin 0px;
+}
+.TextContainer
+{
+/*	color: #AFFF00;*/
+	height: 20px;
+	width: 200px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+/*	margin 0px;*/
+}
