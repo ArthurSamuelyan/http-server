@@ -1,3 +1,26 @@
+
+.Body
+{
+	background-image: url('../Images/Background.png');
+	background-color: #594848;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.HatSpacer
+{
+	height: 150px;
+}
+
+.Header
+{
+	color: #FF8040;
+}
+.SmallText
+{
+	color: #FF8040;
+
+}
+
 .FileLink
 {
 	color: #FFAF00;
