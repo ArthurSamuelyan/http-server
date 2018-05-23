@@ -30,15 +30,34 @@
 	color: #FF8040;
 
 }
+.Table
+{
+	background: #281818;
+	empty-cells: show;
+}
+.TableCell
+{
+	border: 5px solid #000000;
+}
+.CellSpacer
+{
+	width: 200px;
+	opacity: 0.0;
+	filter: alpha(opacity=0);
+	padding: 5px 5px 0px;
+	background-color: #281818;
+	border: 5px solid #281818;
+
+}
 .FileContainer
 {
 /*	height: 150px; */
 	width: 200px;
 	opacity: 0.8;
 	filter: alpha(opacity=80);
-	border: 5px solid #000000;
 	padding: 5px 5px 0px;
 	background-color: #281818;
+	border: 5px solid #281818;
 /*	color: #FFAF00;*/
 }
 .FileContainer:hover
@@ -58,8 +77,14 @@
 {
 	height: 150px;
 	width: 200px;
-	margin 0px;
+	margin: 0px;
+	background-image: url('../Images/GenericPictureBackground.png');
+/*	padding: 10% */
 }
+/*.Picture
+{
+	margin: auto, auto;
+}*/
 .TextContainer
 {
 /*	color: #AFFF00;*/

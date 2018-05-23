@@ -9,10 +9,7 @@
 
 libNames=\
 "boost_system \
-boost_thread \
-boost_date_time \
-boost_regex \
-boost_serialization"
+boost_filesystem "
 
 includePath="/usr/local/lib/boost/include"
 libDirPath="/usr/local/lib/boost/lib/"
@@ -30,11 +27,11 @@ lFlags=" -lpthread "$libs
 #c++ -I $includePath $sourceFile -o $targetFile -L$libDirPath $libs 
 #This compiles with no warnings, but the compiled program cannot find the lib and terminates"
 
-rm Build/*.o
-for sourceFile in Src/*.cpp
+rm Build/PictureIndexator/*.o
+for sourceFile in Src/PictureIndexator/*.cpp
 do
 objectFile=${sourceFile//".cpp"/".o"}
-objectFile=${objectFile//"Src/"/"Build/"}
+objectFile=${objectFile//"Src/PictureIndexator/"/"Build/PictureIndexator/"}
 #echo "=========Compiling "$sourceFile
 echo $compiler$cFlags $sourceFile -o $objectFile
 $compiler$cFlags $sourceFile -o $objectFile
@@ -42,11 +39,12 @@ done
 echo "==================================== Compilation done =========================================="
 
 objectFiles=""
-for currObjectFile in Build/*.o
+for currObjectFile in Build/PictureIndexator/*.o
 do
 objectFiles=$objectFiles" "$currObjectFile
 done
 
-$compiler $objectFiles -o Bin/$1$lFlags
+#$compiler $objectFiles -o Bin/$1$lFlags
+$compiler $objectFiles -o Bin/PictureIndexator$lFlags
 echo "====================================== Linking done ============================================"
 
